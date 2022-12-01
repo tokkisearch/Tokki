@@ -11,7 +11,7 @@ function doquickinfo(keyword) {
 			if (keywordcon.includes(quickinfo[i])) {
 				quickinfobox.style.display = "grid";
 				quickinfoin.innerHTML = "";
-				quickinfoin.innerHTML += '<iframe src="../quickinfo/' + quickinfo[i] + '.html" scrolling="no" width="100%" height="100%" frameborder="0" seamless="seamless"></iframe>';
+				quickinfoin.innerHTML += '<iframe src="../quickinfo/' + quickinfo[i] + '.html" scrolling="no" frameborder="0" seamless="seamless" class="quickinfocontent"></iframe>';
 			}
 		}
 }

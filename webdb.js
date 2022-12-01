@@ -18,7 +18,7 @@ function loadwebdb() {
 	url='https://www.womenshealthmag.com/fitness/a20698941/up-dog-down-dog/';
 	preview='../webcache/Womenshealthmagfitnessa20698941_Up_DogDown_Dog.png';
 	title='Up Dog/Down Dog';
-	source='Womenshealthmagfitnessa20698941';
+	source='Womens health';
 	sourceurl='https://www.womenshealthmag.com/fitness/a20698941';
 	tag='dog'
 	webtmp=[url, preview, title, source, sourceurl, tag]; 

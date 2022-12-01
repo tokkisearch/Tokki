@@ -39,28 +39,32 @@
 </head>
 <body>
 	<center>
-
-	<div class="grid-main">
-		<div class="grid-item">
-			<img src="alphalogo.png" onclick="killsug()">
-			<br>
-			<form style="display: inline-block;">
-				<input name="searchfield" type="text" id="sugin" oninput="showsug()" onclick="showtrends()" style="display: inline-block;">
-			</form>
-			<button onclick="navweb()" onsubmit="navweb()"  style="display: inline-block;">Find</button>
-			<div class="grid-searchbox" id="sugbox">
-				<div class="grid-item" id="sugboxin">
-				
+	
+	
+	<div class="bg">
+	</div>
+		<div class="content">
+			<div class="grid-main">
+				<div class="grid-item">
+					<img src="logo.png" onclick="killsug()">
+					<br>
+					<form style="display: inline-block;">
+						<input name="searchfield" type="text" id="sugin" oninput="showsug()" onclick="showtrends()" style="display: inline-block;"  autocomplete="off">
+						<div class="grid-searchbox" id="sugbox">
+							<div class="grid-item" id="sugboxin">
+							
+							</div>
+						</div>
+					</form>
+					<button onclick="navweb()" onsubmit="navweb()"  style="display: inline-block;">Find</button>
+					<br>
+					<a href="advance/">Advance</a>
+					<a href="about/">About</a>
+					<a href="privacy/">Privacy</a>
+					<a href="language/">Language</a>
 				</div>
 			</div>
-			<br>
-			<a href="advance/">Advance</a>
-			<a href="about/">About</a>
-			<a href="privacy/">Privacy</a>
-			<a href="language/">Language</a>
 		</div>
-	</div>
-
 </center>
 </body>
 </html>
