@@ -1,0 +1,146 @@
+@font-face {
+	font-family: "main";
+	src: url("main.ttf")
+}
+
+body {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: main;
+}
+
+a {
+	font-family: main;
+	color: #0067ce
+}
+
+button {
+	font-family: main;
+}
+
+.grid-main {
+	text-align: center;
+	width: 64%;
+	height: 108px;
+}
+
+.grid-quickinfobox {
+	text-align: center;
+	width: 64%;
+	height: 216px;
+}
+
+.grid-quickinfoimg {
+	text-align: center;
+	width: 216px;
+	height: 216px;
+	display: inline-grid;
+	margin-top: -8px;
+}
+
+.grid-quickinfotext {
+	width: 60%;
+	height: 216px;
+	display: inline-block;
+}
+
+.grid-obj {
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+	text-align: center;
+}
+
+.grid-searchbox {
+	display: none;
+	width: 144px;
+	height: 1px;
+	background-color: white;
+	border: solid 1px black;
+	text-align: center;
+	margin-left: 25.6%;
+	margin-top: -1px;
+	position: fixed
+}
+
+.grid-result {
+	display: inline-grid;
+	width: 256px;
+	height: 256px;
+	margin-left: 8px;
+}
+
+.grid-resultbox {
+	width: 64%;
+	height: auto;
+	display: grid;
+}
+
+
+.grid-tabs {
+	width: 64%;
+	height: 48px;
+	display: grid;
+}
+
+.sugtxt {
+	color: black;
+}
+
+@media (max-width: 600px) {
+
+	body {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		font-family: main;
+		overflow: auto;
+	}
+
+	.grid-main {
+		
+	}
+	
+	.grid-searchbox {
+		margin-left: 21%;
+	}
+	
+	.grid-tabs {
+	width: 88%;
+	height: 48px;
+	display: grid;
+	}
+	
+	.grid-resultbox {
+	width: 88%;
+	height: auto;
+	display: grid;
+	}
+	
+	.grid-main {
+	text-align: center;
+	width: 88%;
+	height: 108px;
+	}
+	
+	.grid-quickinfoimg {
+	text-align: center;
+	width: 0px;
+	height: 0px;
+	display: none;
+	margin-top: 0px;
+}
+
+.grid-quickinfotext {
+	width: 100%;
+	height: 216px;
+	display: grid;
+}
+
+.grid-quickinfotext p {
+	font-size: 10px;
+}
+}
