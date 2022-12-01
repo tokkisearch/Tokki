@@ -9,6 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: main;
+	background-color: #014ea0;
 }
 
 a {
@@ -18,17 +19,37 @@ a {
 
 button {
 	font-family: main;
+	background-color: #ebeee7;
+	border: solid 1px #807f7b;
 }
 
 .grid-main {
 	text-align: center;
+	width: 31%;
+	height: 135px;
+	background-color: rgba(255,255,255,0.8);
+	margin-top: 12%;
+}
+
+.grid-main2 {
+	text-align: center;
 	width: 64%;
 	height: 108px;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.grid-main3 {
+	text-align: center;
+	width: 31%;
+	height: 225px;
+	background-color: rgba(255,255,255,0.8);
+	margin-top: 12%;
 }
 
 .grid-quickinfobox {
 	text-align: center;
 	width: 64%;
+	background-color: rgba(255,255,255,0.8);
 	height: 216px;
 }
 
@@ -51,9 +72,22 @@ button {
 	width: 128px;
 	height: 128px;
 	text-align: center;
+	background-color: rgba(255,255,255,0.8);
 }
 
 .grid-searchbox {
+	display: none;
+	width: 144px;
+	height: 1px;
+	background-color: white;
+	border: solid 1px black;
+	text-align: center;
+	margin-left: 9.1%;
+	margin-top: -1px;
+	position: fixed
+}
+
+.grid-searchbox2 {
 	display: none;
 	width: 144px;
 	height: 1px;
@@ -64,6 +98,7 @@ button {
 	margin-top: -1px;
 	position: fixed
 }
+
 
 .grid-result {
 	display: inline-grid;
@@ -76,6 +111,7 @@ button {
 	width: 64%;
 	height: auto;
 	display: grid;
+	background-color: rgba(255,255,255,0.8);
 }
 
 
@@ -83,11 +119,19 @@ button {
 	width: 64%;
 	height: 48px;
 	display: grid;
+	background-color: rgba(255,255,255,0.8);
 }
 
 .sugtxt {
 	color: black;
 }
+
+.activetab {
+	font-family: main;
+	background-color: rgba(235,238,231,0.4);
+	border: none;	
+}
+
 
 @media (max-width: 600px) {
 
@@ -105,8 +149,20 @@ button {
 	}
 	
 	.grid-searchbox {
+		margin-left: 17%;
+	}
+	
+	.grid-searchbox2 {
 		margin-left: 21%;
 	}
+	
+	.grid-quickinfobox {
+	text-align: center;
+	width: 88%;
+	background-color: rgba(255,255,255,0.8);
+	height: 216px;
+}
+
 	
 	.grid-tabs {
 	width: 88%;
@@ -121,6 +177,12 @@ button {
 	}
 	
 	.grid-main {
+	text-align: center;
+	width: 80%;
+	height: 135px;
+	}
+	
+	.grid-main2 {
 	text-align: center;
 	width: 88%;
 	height: 108px;
@@ -143,4 +205,13 @@ button {
 .grid-quickinfotext p {
 	font-size: 10px;
 }
+
+.grid-main3 {
+	text-align: center;
+	width: 50%;
+	height: 260px;
+	background-color: rgba(255,255,255,0.8);
+	margin-top: 12%;
+}
+
 }
