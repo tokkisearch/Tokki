@@ -3,7 +3,7 @@
 <head>
 	<title>Tokki Web: </title>
 	<link rel="stylesheet" href="../style.css">
-	<link rel="icon" href="../favico.png">
+	<link rel="icon" href="../favico.png" sizes="256x256">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -54,44 +54,56 @@
 </head>
 <body>
 	<center>
-
-	<div class="grid-main2">
-		<div class="grid-item">
-			<img src="../alphalogo.png" onclick="window.location = '../'" width="128" height="66">
-			<br>
-			<form>
-				<input name="find" type="text" id="sugin" oninput="showsug2()" onclick="showtrends2()" style="display: inline-block;" autocomplete="off">
-				<button onclick="navweb()"  style="display: inline-block;">Find</button>
-			</form>
-			<div class="grid-searchbox2" id="sugbox">
-				<div class="grid-item" id="sugboxin">
+	
+	<div class="bg" role="bg">
+	</div>
+	
+	<div class="content">
+		  	<div class="grid-main2">
+				<div class="grid-item">
+					<img src="../logo.png" onclick="window.location = '../'" width="128" height="66">
+					<br>
+					<form>
+						<input name="find" type="text" id="sugin" oninput="showsug2()" onclick="showtrends2()" style="display: inline-block;" autocomplete="off">
+						<button onclick="navweb()"  style="display: inline-block;">Find</button>
+						<div class="grid-searchbox2" id="sugbox">
+							<div class="grid-item" id="sugboxin">
+							
+							</div>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+			
+			
+			<div class="grid-tabs" onclick="killsug()">
+				<div class="grid-item">
+					<button class="activetab" onclick="navweb2()">Web</button>
+					<button onclick="navimg()">Images</button>
+					<button onclick="navvid()">Videos</button>
+					<button onclick="navnews()">News</button>
+				</div>
+			</div>
+			
+			<div class="grid-quickinfobox" onclick="killsug()" style="display: none;" id="quickinfobox">
+				<div class="grid-item" id="quickinfoin">
 				
 				</div>
 			</div>
+			
+			<div class="grid-resultbox" onclick="killsug()">
+				<div class="grid-item" id="resultboxin">
+				
+				</div>
+			</div>
+			
+			<div class="grid-tabs" onclick="killsug()">
+				<div class="grid-item">
+					<p>&copy;2022 Tokki</p>
+				</div>
+			</div>
 		</div>
-	</div>
-	
-	
-	<div class="grid-tabs" onclick="killsug()">
-		<div class="grid-item">
-			<button class="activetab" onclick="navweb2()">Web</button>
-			<button onclick="navimg()">Images</button>
-			<button onclick="navvid()">Videos</button>
-			<button onclick="navnews()">News</button>
-		</div>
-	</div>
-	
-	<div class="grid-quickinfobox" onclick="killsug()" style="display: none;" id="quickinfobox">
-		<div class="grid-item" id="quickinfoin">
-		
-		</div>
-	</div>
-	
-	<div class="grid-resultbox" onclick="killsug()">
-		<div class="grid-item" id="resultboxin">
-		
-		</div>
-	</div>
 </center>
 </body>
 </html>
